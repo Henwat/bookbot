@@ -30,19 +30,6 @@ def get_character_count(text):
         dict_char_num.update({c: count_char})
     return dict_char_num
 
-#----------- Boot.dev's solution ---->
-
-# def get_chars_dict(text):
-#     chars = {}
-#     for c in text:
-#         lowered = c.lower()
-#         if lowered in chars:
-#             chars[lowered] += 1
-#         else:
-#             chars[lowered] = 1
-#     return chars
-#-----------------------------------------
-
 def sort_on(dict):
     res = {key: val for key, val in sorted(dict.items(), key = lambda ele: ele[1], reverse = True)}
     return res
